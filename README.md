@@ -73,3 +73,14 @@ C++ Programming cheatsheet.
           mat[i] = new int[n]();
         }
 
+
+## Important String functions and Techniques
+#### Iterating over characters of string?
+```
+string sample_string = "utsav";
+int length = sample_string.size();
+for(int index=0; index < length; index++){
+	cout << sample_string[index] << endl;
+}
+
+```
