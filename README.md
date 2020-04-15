@@ -1,6 +1,7 @@
-# Programming-CheatSheet
+# CPP Programming CheatSheet
 
-C++ Programming cheatsheet.
+Important codesnippets of strings, ds, stl etc implemented in CPP.
+
 
 ## Important I/O Techniques
 
