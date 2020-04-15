@@ -33,10 +33,7 @@ C++ Programming cheatsheet.
                 vec.clear();
         }
 
-        Sample Input : 
-        Utsav 1 2 3
-        Chokshi 1 7 8
-        
+
         
 #### How to perform string formatting for I/O?
         #include <iomanip>
@@ -77,7 +74,7 @@ C++ Programming cheatsheet.
 ## Important String functions and Techniques
 #### Iterating over characters of string?
 
-	string sample_string = "utsav";
+	string sample_string = "harsh";
 	int length = sample_string.size();
 	for(int index=0; index < length; index++){
 		cout << sample_string[index] << endl;
