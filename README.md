@@ -118,3 +118,37 @@ C++ Programming cheatsheet.
 	string s = ss.str();
 	//alternative method for converting integer to string
 	string numStr = to_string(i);
+
+
+#### String comparison
+	#include <string>
+
+	string s1 = "abc";
+	string s2 = "abcd";
+	string s3 = "abd";
+	string s4 = "abc";
+	string s5 = "aba";
+
+	int i = s1.compare(s2); // s1 < s2 -> returns some val < 0 (-1)
+	i = s1.compare(s3); // s1 < s3 -> returns some val < 0 (-1)
+	i = s1.compare(s4); // s1 = s4 -> returns 0
+	i = s1.compare(s5); // s1 > s5 -> return some val > 0 (2)
+	
+	
+#### SubString and Find-Replace
+	#include <string>
+
+	string fullname = "harsh singh"
+	string name = fullname.substr(1,5);    //substr(start_index,length)
+	string surname = fullname.substr(6);   //returns "singh"
+	size_t found = fullname.find("a"); 
+	// substring to be found can be string or character
+	size_t found = fullname.find('a');
+
+	if(found != nopos){
+		cout << "Pos :" << found << endl;
+	}
+
+	found = fullname.find("a",found+3,5);  
+
+	fullname.replace(found,1,"hello");  
