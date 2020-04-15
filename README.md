@@ -80,3 +80,41 @@ C++ Programming cheatsheet.
 		cout << sample_string[index] << endl;
 	}
 
+
+#### Sorting a string and Reveresal of a string
+	string sample_string = "utsav";
+
+	//It is similar to vector : inplace sorting
+	sort(string.begin(),string.end());
+	sort(string.begin(),string.begin()+2);
+
+	//Inplace reverse
+	reverse(sample_string.begin(),sample_string.end())
+#### Checking a type of character
+	string str = "harsh";
+
+	isdigit(str[0])
+	isalpha(str[0])
+	isalnum(str[0])
+	ispunct(str[0])
+	isspace(str[0])
+	islower(str[0])
+	isupper(str[0])
+	// converting character to upper or lower case
+	toupper(str[0])
+	tolower(str[0])
+#### Converting string to integer and vice-versa
+	#include <cstdlib> //for atoi
+	#include <sstream> //for stringstream
+
+	//converting string to integer
+	string str = "124";
+	int i = atoi(str.c_str());
+
+	//converting integer to string
+	int i = 42;
+	stringstream ss;
+	ss << i;
+	string s = ss.str();
+	//alternative method for converting integer to string
+	string numStr = to_string(i);
