@@ -186,38 +186,27 @@ C++ Programming cheatsheet.
 	//removing nth element from vector
 	int n = 3;
 	vec.erase(vec.begin()+n);
-	//removing(erasing) last element from vector
+	
+	//removing(erasing) last element from vector	
 	vec.pop_back();
+	
 	//swaping two elements
 	swap(vec[0],vec[1]);
+	
 	//accessing last element
 	vec.back();
 	vec[vec.size()-1];
+	
 	//reversing vector
 	reverse(vec.begin(), vec.end());
+	
 	//finding element with max or min value
 	vector<int> vec3({10,30,20});
 	int mx = *max_element(vec3.begin(),vec3.end());
 	int mn = *min_element(vec3.begin(),vec3.end());
+	
 	//finding sum of all values
 	int baseVal = 100; //for finding sum keep baseVal zero
 	int sum = accumulate(vec3.begin(),vec3.end(),baseVal); //returns 160
 
 
-#### Sorting vector of struct instances
-
-	#include <vector>
-	struct Point{
-		float x1;
-		float y1;
-	}
-
-	bool pointComp(const Point& lhs, const point& rhs){
-		// for sorting in ascending order
-		return lhs.x1 < rhs.x1;
-	}
-
-	vector pointVec;
-
-	sort(pointVec.begin(),pointVec.end(),pointComp);
-	sort(pointVec.begin(),pointVec.begin()+5; pointComp);
