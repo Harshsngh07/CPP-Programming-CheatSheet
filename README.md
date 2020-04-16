@@ -77,6 +77,22 @@ Important codesnippets of strings, ds, stl etc implemented in CPP.
 
 ## Important String functions and Techniques
 
+#### To find a substring or a character in a given string
+    string s = "harsh";
+    char c = 'h';
+    size_t found = s.find(c);
+    if(found != string::npos)
+        cout<<"position of h: " << found;
+        
+    // to find sub string
+    
+    string s = "my name is harsh";
+    string s1 = "harsh";
+    size_t found = s.find(s1);
+    if(found!=string::npos)
+        cout<<"postion of harsh: "<< found;
+
+
 #### Iterating over characters of string?
 
     string sample_string = "harsh";
