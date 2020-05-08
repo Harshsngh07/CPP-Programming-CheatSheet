@@ -407,3 +407,46 @@ Important codesnippets of strings, ds, stl etc implemented in CPP.
 - Sets in C++ are containers that stores only unique elements.
 - To use unordered_set : just replace set with unordered_set.
 - unordered_set is feature of C++11
+
+
+#### Defining and accessing set
+
+    #include <set>
+
+    set<int> s;
+
+    s.insert(3);        //Inserts element into the set.
+    s.erase(3);         //Deletes element from set.
+
+    int length = s.size();
+    bool flag = s.empty();
+
+    //clearing content
+    s.clear();
+
+
+#### Initializing set with vector
+
+    #include <set>
+    #include <vector>
+    vector<int> vec;
+    set<int> s2(vec.begin(),vec.end());
+  
+#### Finding element and iterating over all elements in set
+  
+    #include <set>
+
+    set<int> s;
+    s.insert(2);
+
+    if(s.find(2) != s.end()){
+      cout << "Found" << endl;
+    }
+    else{
+      cout << "Not Found" << endl;	
+    }
+
+    set<int>::iterator it;
+    for(it=s.begin(); it!=s.end(); it++){
+      cout << *it << endl;
+    }
