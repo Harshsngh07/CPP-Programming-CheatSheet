@@ -366,3 +366,19 @@ Important codesnippets of strings, ds, stl etc implemented in CPP.
     map<string,int>::iterator it1 = m1.lower_bound('b');
     // points to e
     map<string,int>::iterator it2 = m1.upper_bound('d');
+
+
+## Important Stack functions and Techniques
+
+#### Defining and accessing stack
+
+    #include <stack>
+
+    stack<int> s;
+
+    s.push(3);
+    int temp = s.top();
+    s.pop();        //returns nothing
+
+    bool flag = s.empty();
+    int  length = s.size();
