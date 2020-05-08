@@ -400,3 +400,10 @@ Important codesnippets of strings, ds, stl etc implemented in CPP.
 
     int length = q.size();
     bool flag = q.empty();
+
+
+## Important Set functions and Techniques
+
+- Sets in C++ are containers that stores only unique elements.
+- To use unordered_set : just replace set with unordered_set.
+- unordered_set is feature of C++11
