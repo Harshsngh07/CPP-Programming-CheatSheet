@@ -320,3 +320,22 @@ Important codesnippets of strings, ds, stl etc implemented in CPP.
 
     map<string,int> m1;
     m1['harsh'] = 1;
+    
+#### Checking for key existence and iterating over keys in map
+
+    #include <map>
+    map<string,int> m1;
+    m1["harsh"] = 1;
+    
+    //Iterating over all keys
+    map<string,int>::iterator it;
+    vector<string> v;
+    for(it=m1.begin(); it!=m1.end(); it++){
+      v.push_back(it->first);
+    }
+    //Checking for key existence
+    string key = "harsh";
+    if(m1.find("harsh") == m1.end()){
+      cout << "Key not found." << endl;
+    }
+
