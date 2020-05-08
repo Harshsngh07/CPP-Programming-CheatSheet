@@ -352,3 +352,17 @@ Important codesnippets of strings, ds, stl etc implemented in CPP.
     map<char,int>::iterator it1 = m1.find('c');
     // erases keys : 'c','d','e'
     m1.erase(it1,m1.end());
+    
+#### Finding the lower and upperbound keys
+
+    #include <map>
+    map<char,int> m1;
+    m1['a'] = 1;
+    m1['b'] = 2;
+    m1['c'] = 3;
+    m1['d'] = 4;
+    m1['e'] = 5;
+    // points to b
+    map<string,int>::iterator it1 = m1.lower_bound('b');
+    // points to e
+    map<string,int>::iterator it2 = m1.upper_bound('d');
