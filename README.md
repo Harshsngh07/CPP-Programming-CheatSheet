@@ -1,6 +1,6 @@
 # CPP Programming CheatSheet
 
-Important codesnippets of strings, ds, stl etc implemented in CPP.
+Important codesnippets of strings, ds, algorithms, stl etc. implemented in CPP.
 
 
 ## Important I/O Techniques
