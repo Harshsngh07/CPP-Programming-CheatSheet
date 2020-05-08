@@ -489,3 +489,40 @@ Important codesnippets of strings, ds, stl etc implemented in CPP.
     
     //initializing minHeap
     priority_queue<int, vector<int>, greater<int>> minHeap(greater<int>(), vec);
+    
+
+## How to use Pair?
+
+#### Defining and accessing pair structure
+
+    #include <utility>
+
+    pair<int,int> p1;
+    p1 = make_pair(10,20);
+
+    cout << p1.first << " " << p1.second << endl;
+
+
+#### How to define Trie in C++ ?
+
+    const int ALPHABET_SIZE = 26;
+    struct TrieNode{
+
+        bool isWord;
+        TrieNode* children[ALPHABET_SIZE];
+
+        TrieNode(){
+            isWord = false;
+            for(int i=0; i<ALPHABET_SIZE; i++){
+                children[i] = NULL;
+            }
+        }
+    };
+    class Trie {
+        private:
+            TrieNode* root;
+        public:
+           Trie() {
+                root = new TrieNode();
+           }
+    }
