@@ -450,3 +450,38 @@ Important codesnippets of strings, ds, stl etc implemented in CPP.
     for(it=s.begin(); it!=s.end(); it++){
       cout << *it << endl;
     }
+
+
+## Important Priority Queue / Heap functions and techniques
+
+#### Building heap (i.e. initializing pq with vector) takes O(N)
+
+- Insertion/Deletion (i.e. push/pop) of single element takes O(logN)
+- Hence, If you build heap by inserting element one by one then it takes O(NlogN)
+- Getting top element (i.e. finding largest/smallest) takes O(1)
+
+#### Defining and accessing priority queue
+
+    #include <queue>
+    priority_queue<int> maxHeap;
+    priority_queue<int, vector<int>, greater<int>> minHeap;
+    maxHeap.push(3);   //Inserts element into pq at appropriate place
+    maxHeap.pop();     //Removes top element
+    //Retrieves greatest(maxHeap)/smallest(minHeap) element
+    int top = maxHeap.top()
+    int length = maxHeap.size();
+    bool flag = maxHeap.empty();
+    //clearing content
+    maxHeap.clear();
+  
+#### Initializing priority queue with vector
+
+    #include <queue>
+    #include <vector>
+    vector<int> vec({1,5,10,2});
+    
+    //initializing maxHeap
+    priority_queue<int> maxHeap(less<int>(), vec); 
+    
+    //initializing minHeap
+    priority_queue<int, vector<int>, greater<int>> minHeap(greater<int>(), vec);
