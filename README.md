@@ -465,12 +465,16 @@ Important codesnippets of strings, ds, stl etc implemented in CPP.
     #include <queue>
     priority_queue<int> maxHeap;
     priority_queue<int, vector<int>, greater<int>> minHeap;
+    
     maxHeap.push(3);   //Inserts element into pq at appropriate place
     maxHeap.pop();     //Removes top element
+    
     //Retrieves greatest(maxHeap)/smallest(minHeap) element
     int top = maxHeap.top()
+    
     int length = maxHeap.size();
     bool flag = maxHeap.empty();
+    
     //clearing content
     maxHeap.clear();
   
