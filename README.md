@@ -382,3 +382,21 @@ Important codesnippets of strings, ds, stl etc implemented in CPP.
 
     bool flag = s.empty();
     int  length = s.size();
+    
+    
+## Important Queue functions and Techniques
+
+#### Defining and accessing queue
+
+    #include <queue>
+
+    queue<int> q;
+
+    q.push(3);			//Inserts element at the end.
+    q.pop();			//Returns nothing and deletes element from the front.
+
+    int f = q.front();  //First element in queue
+    int b = q.back();   //Last element in queue
+
+    int length = q.size();
+    bool flag = q.empty();
